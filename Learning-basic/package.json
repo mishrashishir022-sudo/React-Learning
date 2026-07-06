@@ -1,0 +1,29 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Learning React for the first time",
+  "keywords": [],
+  "homepage": "https://github.com/mishrashishir022-sudo/React-Learning#readme",
+  "bugs": {
+    "url": "https://github.com/mishrashishir022-sudo/React-Learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishrashishir022-sudo/React-Learning.git"
+  },
+  "license": "ISC",
+  "author": "Shishir Mishra",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "prod": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}

@@ -1,25 +1,32 @@
-//<div class="parent">
-//  <div class="child1">
-//    <h1>Hello From react</h1>
-//    <h2>Bye! Bye! From React</h2>
-//   </div>
-// <div class="child2">
-//    <h1>Hello From react</h1>
-//   <h2>Bye! Bye! From React</h2>
-//</div>
-//</div>
+import React from "react"
+import ReactDOM from "react-dom/client"
 
 let main = React.createElement("div", 
-    {class: "parent"},
+    {className: "parent"},
 [React.createElement('div', 
-    {class: "child1"},
+    {className: "child1"},
     [React.createElement("h1" , {}, "Hello From React"), React.createElement("h2" , {}, "Bye! Bye! From React")] 
 ),
 React.createElement('div', 
-    {class: "child2"},
+    {className: "child2"},
     [React.createElement("h1" , {}, "Hello From React"), React.createElement("h2" , {}, "Bye! Bye! From React")] 
 )])
 
+//jsx code
 
+let hero = <div className="parent"><h1>Hey, this code has been written in JSX 🚀</h1></div>
+//react Fun Component - always remember to use Upper case for the first letter for variable name
+const Idiot = ()=> (
+    <div className="main2">
+            <h1>This is Functional Component</h1>
+    </div>
+)
+// component composition
+const Idiot2 = ()=> {
+   return <div className="main">
+        <Idiot/>
+            <h1>This is Functional Component- component composition</h1>
+    </div>
+}
 let insert = ReactDOM.createRoot(document.querySelector(".box"))
-insert.render(main)
+insert.render(<Idiot2/>) 
